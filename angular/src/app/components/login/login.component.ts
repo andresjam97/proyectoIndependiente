@@ -14,6 +14,7 @@ export class LoginComponent implements OnInit {
   constructor( private router:Router, private auth:AuthenticationService) { }
 
   ngOnInit(): void {
+    console.log("Hola Mundo");
   }
   onSubmit(form:NgForm){
     const email = form.value.email;
