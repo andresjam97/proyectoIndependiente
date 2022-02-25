@@ -7,6 +7,7 @@ import { LoginComponent } from './components/login/login.component';
 import { LogoutComponent } from './components/logout/logout.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
+import { TablaPedidosComponent } from './components/tabla-pedidos/tabla-pedidos.component';
 import { AuthGuard } from './services/auth.guard';
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'reset-password', component: ResetPasswordComponent},
   {path: 'logout', component: LogoutComponent, canActivate:[AuthGuard]},
   {path: 'dashboard', component: DashboardComponent, canActivate:[AuthGuard]},
+  {path: 'pedidosTabla', component: TablaPedidosComponent, canActivate:[AuthGuard]}
 ];
 
 @NgModule({

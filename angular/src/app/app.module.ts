@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { MatTableModule } from "@angular/material/table";
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
@@ -14,6 +15,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/home/home.component';
 import { LogoutComponent } from './components/logout/logout.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TablaPedidosComponent } from './components/tabla-pedidos/tabla-pedidos.component';
 
 @NgModule({
   declarations: [
@@ -25,14 +27,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ResetPasswordComponent,
     DashboardComponent,
     HomeComponent,
-    LogoutComponent
+    LogoutComponent,
+    TablaPedidosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTableModule
+  ],
+  exports:[
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
