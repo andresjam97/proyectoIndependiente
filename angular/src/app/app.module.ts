@@ -6,6 +6,11 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { MatTableModule } from "@angular/material/table";
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { MatButtonModule } from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon'; 
+import {MatFormFieldModule} from '@angular/material/form-field'; 
+import {MatInputModule} from '@angular/material/input'; 
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
@@ -39,7 +44,12 @@ import { TablaPedidosComponent } from './components/tabla-pedidos/tabla-pedidos.
     HttpClientModule,
     BrowserAnimationsModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatSortModule,
+    MatButtonModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   exports:[
     MatTableModule
