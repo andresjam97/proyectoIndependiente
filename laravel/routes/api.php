@@ -33,3 +33,9 @@ Route::group(['namespace'=>'Api\Auth'], function(){
     Route::post('/forgot', 'ForgotPasswordController@forgot');
     Route::post('/reset', 'ForgotPasswordController@reset');
 });
+
+
+Route::group(['namespace'=>'Api\Pedidos'], function(){    
+    Route::get('/pedidosUser/{user_id}', 'PedidosController@pedidosUser')->middleware('auth:api');    
+});
+
